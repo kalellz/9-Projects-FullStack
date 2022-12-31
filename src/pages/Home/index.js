@@ -29,7 +29,7 @@ export default function Home() {
                             setTimeout(() => { navigate('/Projects/2') }, 1250)
                         }}
                         >Two: Simple Counter</Button>
-                        
+
                         <Button disabled={carregando} onClick={() => {
                             setCarregando(true);
                             ref.current.complete();
@@ -44,8 +44,12 @@ export default function Home() {
                         }}
                         >Four: Form Validator</Button>
 
-                        <Button disabled={carregando}>Four</Button>
-                        <Button disabled={carregando}>Five</Button>
+                        <Button disabled={carregando} onClick={() => {
+                            setCarregando(true);
+                            ref.current.complete();
+                            setTimeout(() => { navigate('/Projects/5') }, 1250)
+                        }}
+                        >Five: Quizz App</Button>
                         <Button disabled={carregando}>Six</Button>
                         <Button disabled={carregando}>Seven</Button>
                         <Button disabled={carregando}>Eight</Button>
