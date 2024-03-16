@@ -7,6 +7,7 @@ import Project2 from './pages/Projects/Project-Two'
 import Project3 from './pages/Projects/Project-Three'
 import Project4 from './pages/Projects/Project-Four'
 import Project5 from './pages/Projects/Project-Five'
+import Project6 from './pages/Projects/Project-Six'
 
 export default function Index() {
     return (
@@ -20,6 +21,7 @@ export default function Index() {
                 <Route path="/Projects/3"   element={<Project3/>}           />
                 <Route path="/Projects/4"   element={<Project4/>}           />
                 <Route path="/Projects/5"   element={<Project5/>}           />
+                <Route path="/Projects/6"   element={<Project6/>}           />
             </Routes>
         </BrowserRouter>
     );

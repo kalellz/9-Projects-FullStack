@@ -50,7 +50,12 @@ export default function Home() {
                             setTimeout(() => { navigate('/Projects/5') }, 1250)
                         }}
                         >Five: Quizz App</Button>
-                        <Button disabled={carregando}>Six</Button>
+                        <Button disabled={carregando} onClick={() => {
+                            setCarregando(true);
+                            ref.current.complete();
+                            setTimeout(() => { navigate('/Projects/6') }, 1250)
+                        }}
+                        >Six: Find Record</Button>
                         <Button disabled={carregando}>Seven</Button>
                         <Button disabled={carregando}>Eight</Button>
                         <Button disabled={carregando}>Nine</Button>
