@@ -21,8 +21,8 @@ export default function Project() {
                             <AddCircleRoundedIcon color='primary' sx={{ fontSize: 60 }} onClick={() => setCounter(counter + 1)} />
                             <DoNotDisturbOnRoundedIcon color='primary' sx={{ fontSize: 60 }} onClick={() => setCounter(counter - 1)} />
                         </div>
-                        {counter >= -20 && counter <= 23 && <h1>Temperatura Fria</h1>}
-                        {counter > 23 && counter <= 26 && <h1>Temperatura Ambiente</h1>}
+                        {counter >= -20 && counter <= 20 && <h1>Temperatura Fria</h1>}
+                        {counter > 20 && counter <= 26 && <h1>Temperatura Ambiente</h1>}
                         {counter > 26 && counter <= 40 && <h1>Temperatura Quente</h1>}
                         {counter <= -21 && <h1><span>Temperatura Inválida</span></h1>}
                         {counter >= 41 && <h1><span>Temperatura Inválida</span></h1>}
