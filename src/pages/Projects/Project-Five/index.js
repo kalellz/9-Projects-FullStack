@@ -7,8 +7,6 @@ import Questions from './questions';
 
 export default function Project() {
     const navigate = useNavigate()
-    
-    
     return (
         <main className="center-main">
             <Button onClick={() => navigate('/')} startIcon={<ArrowBackIcon />}>
